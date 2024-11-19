@@ -1,0 +1,47 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .task-item span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Botón de Verificar */
+  .task-item span:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .task-item span:first-of-type:hover {
+    background-color: #45a049;
+  }
+  
+  /* Botón de Borrar */
+  .task-item span:last-of-type {
+    background-color: #FF5252;
+    color: white;
+  }
+  
+  .task-item span:last-of-type:hover {
+    background-color: #E53935;
+  }
+  
+  /* Tarea completada */
+  .task-item.completed p {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
